@@ -32,6 +32,10 @@ Rickshaw.Fixtures.Time.Local = function() {
 			seconds: 3600 * 6,
 			formatter: function(d) { return self.formatTime(d) }
 		}, {
+			name: 'day 3 hour',
+			seconds: 3600 * 3,
+			formatter: function(d) { return String('00'+d.getUTCDate().toString()).slice(-2)+'-'+String('00'+d.getUTCHours().toString()).slice(-2) }
+		}, {
 			name: 'hour',
 			seconds: 3600,
 			formatter: function(d) { return self.formatTime(d) }

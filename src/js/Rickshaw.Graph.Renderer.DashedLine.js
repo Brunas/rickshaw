@@ -1,8 +1,8 @@
-Rickshaw.namespace('Rickshaw.Graph.Renderer.Line');
+Rickshaw.namespace('Rickshaw.Graph.Renderer.DashedLine');
 
-Rickshaw.Graph.Renderer.Line = Rickshaw.Class.create( Rickshaw.Graph.Renderer, {
+Rickshaw.Graph.Renderer.DashedLine = Rickshaw.Class.create( Rickshaw.Graph.Renderer, {
 
-	name: 'line',
+	name: 'dashedline',
 
 	defaults: function($super) {
 
@@ -10,7 +10,9 @@ Rickshaw.Graph.Renderer.Line = Rickshaw.Class.create( Rickshaw.Graph.Renderer, {
 			unstack: true,
 			fill: false,
 			stroke: true,
-			strokeDashArray: '0,0'
+			strokeWidth: 2,
+			strokeDashArray: '10,10'
+
 		} );
 	},
 

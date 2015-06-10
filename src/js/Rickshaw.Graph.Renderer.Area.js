@@ -90,7 +90,8 @@ Rickshaw.Graph.Renderer.Area = Rickshaw.Class.create( Rickshaw.Graph.Renderer, {
 			d3.select(series.path).select('.line')
 				.attr('fill', 'none')
 				.attr('stroke', series.stroke || d3.interpolateRgb(series.color, 'black')(0.125))
-				.attr('stroke-width', this.strokeWidth);
+				.attr('stroke-width', this.strokeWidth)
+				.attr('stroke-dasharray', this.strokeDashArray);
 		}
 
 		if (series.className) {

@@ -20,6 +20,7 @@ Rickshaw.Graph.Renderer = Rickshaw.Class.create( {
 		return {
 			tension: 0.8,
 			strokeWidth: 2,
+			strokeDashArray: '0,0',
 			unstack: true,
 			padding: { top: 0.01, right: 0, bottom: 0.01, left: 0 },
 			stroke: false,
@@ -119,6 +120,7 @@ Rickshaw.Graph.Renderer = Rickshaw.Class.create( {
 		series.path.setAttribute('fill', fill);
 		series.path.setAttribute('stroke', stroke);
 		series.path.setAttribute('stroke-width', this.strokeWidth);
+		series.path.setAttribute('stroke-dasharray', this.strokeDashArray);
 
 		if (series.className) {
 			d3.select(series.path).classed(series.className, true);
@@ -171,5 +173,12 @@ Rickshaw.Graph.Renderer = Rickshaw.Class.create( {
 			this.tension = tension;
 		}
 	}
+
+	setStrokeDashArray: function(strokeDashArray) {
+		if (strokeDashArray !== undefined) {
+			this.strokeDashArray = strokeDashArray;
+		}
+	},
+
 } );
 

@@ -12,7 +12,8 @@ Rickshaw.Graph.Renderer.LinePlot = Rickshaw.Class.create( Rickshaw.Graph.Rendere
 			stroke: true,
 			padding:{ top: 0.01, right: 0.01, bottom: 0.01, left: 0.01 },
 			dotSize: 3,
-			strokeWidth: 2
+			strokeWidth: 2,
+			strokeDashArray: '0,0'
 		} );
 	},
 
@@ -75,6 +76,7 @@ Rickshaw.Graph.Renderer.LinePlot = Rickshaw.Class.create( Rickshaw.Graph.Rendere
 				n.setAttribute('fill', 'white');
 				n.setAttribute('stroke', series.color);
 				n.setAttribute('stroke-width', this.strokeWidth);
+				n.setAttribute('stroke-dasharray', this.strokeDashArray);
 
 			}.bind(this));
 
