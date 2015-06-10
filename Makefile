@@ -41,6 +41,7 @@ JS_FILES=\
 	src/js/Rickshaw.Graph.RangeSlider.Preview.js\
 	src/js/Rickshaw.Graph.Renderer.js\
 	src/js/Rickshaw.Graph.Renderer.Line.js\
+	src/js/Rickshaw.Graph.Renderer.DashedLine.js\
 	src/js/Rickshaw.Graph.Renderer.Stack.js\
 	src/js/Rickshaw.Graph.Renderer.Bar.js\
 	src/js/Rickshaw.Graph.Renderer.Area.js\

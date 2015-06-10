@@ -172,13 +172,13 @@ Rickshaw.Graph.Renderer = Rickshaw.Class.create( {
 		if (tension !== undefined) {
 			this.tension = tension;
 		}
-	}
+	},
 
 	setStrokeDashArray: function(strokeDashArray) {
 		if (strokeDashArray !== undefined) {
 			this.strokeDashArray = strokeDashArray;
 		}
-	},
+	}
 
 } );
 
